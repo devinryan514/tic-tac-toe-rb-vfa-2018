@@ -125,6 +125,7 @@ def winner(board)
   end
 end
 
+#play
 def play(board)
   num_turns = 0
   while num_turns < 9
