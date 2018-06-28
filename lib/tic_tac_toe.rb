@@ -63,7 +63,7 @@ def turn(board)
   user_index = input_to_index(user_index)
   if valid_move?(board, user_index)
     move(board, user_index, current_player(board))
-    display_board(board)
+    board
   else
     turn(board)
   end
@@ -129,6 +129,7 @@ end
 def play
   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   until over?(board)
-    turn(board)
+    board = turn(board)
+    display_board(board)
   end
 end
