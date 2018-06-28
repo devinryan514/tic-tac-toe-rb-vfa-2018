@@ -126,8 +126,7 @@ def winner(board)
 end
 
 #play
-def play
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+def play(board)
   until over?(board)
     board = turn(board)
     display_board(board)
