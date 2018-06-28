@@ -126,10 +126,9 @@ def winner(board)
 end
 
 #play
-def play(board)
-  num_turns = 0
-  while num_turns < 9
+def play
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  until over?(board)
     turn(board)
-    num_turns += 1
   end
 end
