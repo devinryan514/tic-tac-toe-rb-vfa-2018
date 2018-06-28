@@ -131,4 +131,8 @@ def play(board)
     board = turn(board)
     display_board(board)
   end
+  if draw?(board)
+    puts "Cat's Game!"
+  else 
+    winning_player = winner(board)
 end
